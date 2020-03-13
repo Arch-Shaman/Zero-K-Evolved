@@ -16,8 +16,8 @@ local flare = {
 
 
 
-local fast = 3
-local slow = 0.75
+local fast = 4
+local slow = 0.55
 local spGetUnitRulesParam = Spring.GetUnitRulesParam
 local spGetUnitMoveTypeData = Spring.GetUnitMoveTypeData
 local spSetUnitRulesParam = Spring.SetUnitRulesParam
@@ -110,7 +110,7 @@ end
 function script.Create()
 	Move(rwing, x_axis, WING_DISTANCE)
 	Move(lwing, x_axis, -WING_DISTANCE)
-	StartThread(SmokeUnit, smokePiece)
+	StartThread(GG.Script.SmokeUnit, unitID, smokePiece)
 	StartThread(SpeedThread)
 end
 

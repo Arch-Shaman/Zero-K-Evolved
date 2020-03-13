@@ -175,8 +175,8 @@ local unitDef = {
 		},
 
 	MISSILE_AG = {
-		burst = 4,
-		burstRate = 0.23333333,
+		burst = 2,
+		burstRate = 0.5,
 		name                    = [[Hurricane Surface Attack Missile]],
 		areaOfEffect            = 96,
 		avoidFriendly           = true,
@@ -201,7 +201,7 @@ local unitDef = {
 			timeoutspawn = 0, -- Can this missile spawn its subprojectiles when it times out? OPTIONAL. Default: 1.
 			vradius = 6, -- velocity that is randomly added. covers range of +-vradius. OPTIONAL. Default: 4.2
 			--useheight = 1,
-			damage_vs_shield = [[400]],
+			damage_vs_shield = [[165]],
 			--groundimpact = 1, -- check the distance between ground and projectile? OPTIONAL.
 			--proxy = 1, -- check for nearby units?
 			--proxydist = 100, -- how far to check for units? Default: spawndist

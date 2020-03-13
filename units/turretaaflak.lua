@@ -66,7 +66,7 @@ return { turretaaflak = {
 
 			ARMFLAK_GUN = {
 				name                    = [[Flak Canister]],
-				--accuracy                = 500,
+				accuracy                = 900,
 				areaOfEffect            = 96,
 				burnblow                = true,
 				canattackground         = false,
@@ -84,11 +84,11 @@ return { turretaaflak = {
 					--spreadradius = 3, -- used in clusters. OPTIONAL. Default: 100.
 					clustervec = "randomxyz", -- accepted values: randomx, randomy, randomz, randomxy, randomxz, randomyz, random. OPTIONAL. default: random.
 					use2ddist = 0, -- should we check 2d or 3d distance? OPTIONAL. Default: 0.
-					spawndist = 600, -- at what distance should we spawn the projectile(s)? REQUIRED.
-					vradius = "-3,-3,-3,3,3,3", -- velocity that is randomly added. covers range of +-vradius. OPTIONAL. Default: 4.2
+					spawndist = 800, -- at what distance should we spawn the projectile(s)? REQUIRED.
+					vradius = "-2,-2,-2,2,2,2", -- velocity that is randomly added. covers range of +-vradius. OPTIONAL. Default: 4.2
 					groundimpact = 0, -- check the distance between ground and projectile? OPTIONAL.
-					--proxy = 1, -- check for nearby units?
-					--proxydist = 100, -- how far to check for units? Default: spawndist
+					proxy = 1, -- check for nearby units?
+					proxydist = 100, -- how far to check for units? Default: spawndist
 				},
 
 				damage                  = {

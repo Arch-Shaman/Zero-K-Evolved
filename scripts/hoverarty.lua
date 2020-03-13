@@ -109,7 +109,6 @@ function reloadThread()
 		end
 		oldtime = tracking
 		Sleep(100)
-		Spring.Echo("UID: " .. unitID .. "\nTracking: " .. tracking .. "/" .. trackneeded .. "\nTrackingComplete: " .. tostring(trackingcomplete .. "\nReloading: " .. reloading))
 	end
 end
 
@@ -174,7 +173,6 @@ local beam_duration = WeaponDefs[UnitDef.weapons[1].weaponDef].beamtime * 1000
 function script.FireWeapon(id)
 	if id == 2 then -- tracking beam 
 		tracking = tracking + 1
-		Spring.Echo("Tracking: " .. tracking)
 	elseif id == 1 then
 		firing = true
 		Sleep (beam_duration)
