@@ -228,4 +228,4 @@ unitDef = {
 
 }
 
-return lowerkeys({ napalmmissile = unitDef })
+return { napalmmissile = unitDef }

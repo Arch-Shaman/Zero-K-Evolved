@@ -78,7 +78,7 @@ unitDef = {
     TRACKER = {
       name                    = [[Tracking Beam]],
       areaOfEffect            = 20,
-      beamTime                = 0.01,
+      beamTime                = 3/30,
       coreThickness           = 0.5,
       craterBoost             = 0,
       craterMult              = 0,
@@ -108,7 +108,7 @@ unitDef = {
       minIntensity            = 0.01,
       noSelfDamage            = true,
       range                   = 1020,
-      reloadtime              = 0.01,
+      reloadtime              = 2/30,
 	  sweapfire = false,
       rgbColor                = [[0.7 0 0]],
       soundStart              = [[weapon/laser/tracker]],
@@ -197,4 +197,4 @@ unitDef = {
 
 }
 
-return lowerkeys({ hoverarty = unitDef })
+return { hoverarty = unitDef }

@@ -87,21 +87,15 @@ local unitDef = {
 			onlyTargetCategory = [[LAND SINK TURRET SHIP SWIM FLOAT HOVER SINK SUB]],
 			maxAngleDif        = 120,
 		},
-		--[[{
-			def                = [[CANNON]],
-			badTargetCategory  = [[GUNSHIP]],
-			onlyTargetCategory = [[LAND SINK TURRET SHIP FIXEDWING GUNSHIP SWIM FLOAT HOVER SINK SUB]],
-			maxAngleDif        = 120,
-		},]]
 	},
 
 	weaponDefs             = {
-		--[[CANNON = {
+		CANNON = {
 			name                    = [[Main Cannon]],
 			alphaDecay              = 0.1,
 			areaOfEffect            = 8,
 			burst                   = 6,
-			burstrate               = 0.05,
+			burstrate               = 0.03333334,
 			projectiles = 4,
 			colormap                = [[1 0.95 0.4 1   1 0.95 0.4 1    0 0 0 0.01    1 0.7 0.2 1]],
 			craterBoost             = 0,
@@ -127,7 +121,7 @@ local unitDef = {
 			noGap                   = false,
 			noSelfDamage            = true,
 			range                   = 185,
-			reloadtime              = 0.31,
+			reloadtime              = 0.3,
 			rgbColor                = [[1 0.95 0.4]],
 			separation              = 1.5,
 			size                    = 1.75,
@@ -140,7 +134,7 @@ local unitDef = {
 			turret                  = true,
 			weaponType              = [[Cannon]],
 			weaponVelocity          = 500,
-		},]]
+		},
 		AG = {
 			name                    = [[Plasma Submunition]],
 			accuracy                = 180,
@@ -182,7 +176,7 @@ local unitDef = {
 
 	MISSILE_AG = {
 		burst = 4,
-		burstRate = 0.25,
+		burstRate = 0.23333333,
 		name                    = [[Hurricane Surface Attack Missile]],
 		areaOfEffect            = 96,
 		avoidFriendly           = true,

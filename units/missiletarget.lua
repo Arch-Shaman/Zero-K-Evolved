@@ -52,4 +52,4 @@ unitDef = {
   yardMap                = [[yyyy]],
 }
 
-return lowerkeys({ missiletarget = unitDef })
+return { missiletarget = unitDef }
