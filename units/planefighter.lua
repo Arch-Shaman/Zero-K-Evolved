@@ -1,4 +1,4 @@
-unitDef = {
+local unitDef = {
 	unitname               = [[planefighter]],
 	name                   = [[Proliferator]],
 	description            = [[Fighter-Bomber]],
@@ -87,16 +87,16 @@ unitDef = {
 			onlyTargetCategory = [[LAND SINK TURRET SHIP SWIM FLOAT HOVER SINK SUB]],
 			maxAngleDif        = 120,
 		},
-		{
+		--[[{
 			def                = [[CANNON]],
 			badTargetCategory  = [[GUNSHIP]],
 			onlyTargetCategory = [[LAND SINK TURRET SHIP FIXEDWING GUNSHIP SWIM FLOAT HOVER SINK SUB]],
 			maxAngleDif        = 120,
-		},
+		},]]
 	},
 
 	weaponDefs             = {
-		CANNON = {
+		--[[CANNON = {
 			name                    = [[Main Cannon]],
 			alphaDecay              = 0.1,
 			areaOfEffect            = 8,
@@ -140,7 +140,7 @@ unitDef = {
 			turret                  = true,
 			weaponType              = [[Cannon]],
 			weaponVelocity          = 500,
-		},
+		},]]
 		AG = {
 			name                    = [[Plasma Submunition]],
 			accuracy                = 180,
@@ -384,4 +384,4 @@ unitDef = {
 
 }
 
-return lowerkeys({ planefighter = unitDef })
+return { planefighter = unitDef }
