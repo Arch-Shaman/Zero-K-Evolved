@@ -16,6 +16,7 @@ end
 
 local config = {} -- stores table
 local projectiles = {}
+local debug = false
 
 --Speedups--
 local spEcho = Spring.Echo
@@ -86,7 +87,7 @@ local function ExplodeProjectile(id,wd,x,y,z)
 end
 
 local function CheckProjectile(id,wd)
-	spEcho(id .. " : " .. tostring(wd))
+	--spEcho(id .. " : " .. tostring(wd))
 	local x,y,z = spGetProjectilePosition(id)
 	if x == nil then
 		projectiles[id] = nil
@@ -94,7 +95,9 @@ local function CheckProjectile(id,wd)
 	end
 	if config[wd]["timer"] > 0 then
 		projectiles[id].timer = projectiles[id].timer - 5
-		if projectiles[id].timer <= 0 and (100 - random(1,40) + projectiles[id].timer <= 0)  then
+		local explode = 100 - random(10,80) + projectiles[id].timer
+		if debug then spEcho("Explode: " .. explode) end
+		if explode <= 0  then
 			ExplodeProjectile(id,wd,x,y,z)
 		end
 		return

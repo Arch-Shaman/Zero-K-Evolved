@@ -55,7 +55,7 @@ unitDef = {
 	noAutoFire             = false,
 	noChaseCategory        = [[TERRAFORM SATELLITE SUB LAND SINK TURRET SHIP SWIM FLOAT HOVER]],
 	objectName             = [[fighter.s3o]],
-	script                 = [[proliferator.lua]],
+	script                 = [[planefighter.lua]],
 	selfDestructAs         = [[GUNSHIPEX]],
 
 	sfxtypes               = {
@@ -159,7 +159,7 @@ unitDef = {
 			},
 
 			damage                  = {
-				default = 75,
+				default = 55,
 			},
 			groundbounce = false,
 			--bounceslip = 0.25,
@@ -181,7 +181,7 @@ unitDef = {
 		},
 
 	MISSILE_AG = {
-		burst = 2,
+		burst = 4,
 		burstRate = 0.25,
 		name                    = [[Hurricane Surface Attack Missile]],
 		areaOfEffect            = 96,
@@ -198,12 +198,12 @@ unitDef = {
 			light_color = [[0.5 0.6 0.6]],
 			reaim_time = 60, -- Fast update not required (maybe dangerous)
 			--CAS--
-			numprojectiles = 4, -- how many of the weapondef we spawn. OPTIONAL. Default: 1.
-			projectile = "proliferator_ag",
-			--spreadradius = 4, -- used in clusters. OPTIONAL. Default: 100.
+			numprojectiles = 3, -- how many of the weapondef we spawn. OPTIONAL. Default: 1.
+			projectile = "planefighter_ag",
+			--spreadradius = 6, -- used in clusters. OPTIONAL. Default: 100.
 			clustervec = "randomxz", -- accepted values: randomx, randomy, randomz, randomxy, randomxz, randomyz, random. OPTIONAL. default: random.
 			use2ddist = 0, -- should we check 2d or 3d distance? OPTIONAL. Default: 0.
-			spawndist = 250, -- at what distance should we spawn the projectile(s)? REQUIRED.
+			spawndist = 140, -- at what distance should we spawn the projectile(s)? REQUIRED.
 			timeoutspawn = 0, -- Can this missile spawn its subprojectiles when it times out? OPTIONAL. Default: 1.
 			vradius = 6, -- velocity that is randomly added. covers range of +-vradius. OPTIONAL. Default: 4.2
 			--useheight = 1,

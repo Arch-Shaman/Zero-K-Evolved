@@ -109,7 +109,7 @@ unitDef = {
 
       customParams        	  = {
 		numprojectiles = 3, -- how many of the weapondef we spawn. OPTIONAL. Default: 1.
-		projectile = "napalm_missile_weapon2",
+		projectile = "napalmmissile_weapon2",
 		spreadradius = 4, -- used in clusters. OPTIONAL. Default: 100.
 		clustervec = "evenxyz", -- accepted values: randomx, randomy, randomz, randomxy, randomxz, randomyz, random. OPTIONAL. default: random.
 		use2ddist = 1, -- should we check 2d or 3d distance? OPTIONAL. Default: 0.
@@ -171,7 +171,7 @@ unitDef = {
 
       customParams        	  = {
 		numprojectiles = 20, -- how many of the weapondef we spawn. OPTIONAL. Default: 1.
-		projectile = "napalm_missile_secondary",
+		projectile = "napalmmissile_secondary",
 		spreadradius = 4, -- used in clusters. OPTIONAL. Default: 100.
 		clustervec = "randomxz", -- accepted values: randomx, randomy, randomz, randomxy, randomxz, randomyz, random. OPTIONAL. default: random.
 		use2ddist = 1, -- should we check 2d or 3d distance? OPTIONAL. Default: 0.

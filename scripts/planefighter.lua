@@ -16,8 +16,8 @@ local flare = {
 
 
 
-local fast = 2.5
-local slow = 1
+local fast = 3
+local slow = 0.75
 local spGetUnitRulesParam = Spring.GetUnitRulesParam
 local spGetUnitMoveTypeData = Spring.GetUnitMoveTypeData
 local spSetUnitRulesParam = Spring.SetUnitRulesParam
@@ -65,7 +65,7 @@ function SpeedThread()
 	local reloading = false
 	while spGetUnitMoveTypeData(unitID).aircraftState ~= "crashing" do
 		ammo = spGetUnitRulesParam(unitID,"noammo") or 0
-		if ammo == 1 and reloading and movectrlGetTag(unitID) ~= nil then -- being reloaded.
+		if ammo == 0 and reloading then -- being reloaded.
 			while movectrlGetTag(unitID) ~= nil do
 				Sleep(33)
 			end
@@ -74,7 +74,7 @@ function SpeedThread()
 			Sleep(330)
 			reloading = false
 			block = false
-		elseif ammo == 0 and not reloading then
+		elseif ammo == 1 and not reloading then
 			spSetUnitRulesParam(unitID, "selfMoveSpeedChange", slow)
 			SetAirMoveTypeData(unitID, "maxAcc", slow/2)
 			GG.UpdateUnitAttributes(unitID)
