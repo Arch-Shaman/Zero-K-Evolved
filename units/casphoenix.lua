@@ -123,7 +123,7 @@ unitDef = {
 		avoidFeature            = false,
 		avoidFriendly           = false,
 		burst                   = 3,
-		burstrate               = 0.43,
+		burstrate               = 0.4,
 		collideFeature          = false,
 		collideFriendly         = false,
 		craterBoost             = 0,
@@ -189,4 +189,4 @@ unitDef = {
 
 }
 
-return lowerkeys({ casphoenix = unitDef })
+return { casphoenix = unitDef }
