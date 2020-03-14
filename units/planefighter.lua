@@ -108,8 +108,8 @@ local unitDef = {
 			},
 
 			damage                  = {
-				default = 12,
-				subs    = 0.567,
+				default = 4,
+				subs    = 0.25,
 			},
 
 			explosionGenerator      = [[custom:FLASHPLOSION]],

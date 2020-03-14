@@ -58,7 +58,7 @@ local unitDef = {
 			badTargetCategory  = [[GUNSHIP]],
 			mainDir            = [[0 0 1]],
 			maxAngleDif        = 90,
-			onlyTargetCategory = [[FIXEDWING GUNSHIP]],
+			onlyTargetCategory = [[LAND SINK TURRET SHIP SWIM FLOAT HOVER SINK SUB]],
 		},
 		{
 			def                = [[AA]],
@@ -87,8 +87,8 @@ local unitDef = {
 			},
 
 			damage                  = {
-				default = 15,
-				subs    = 15/8,
+				default = 6,
+				subs    = 6/8,
 			},
 
 			explosionGenerator      = [[custom:FLASHPLOSION]],
